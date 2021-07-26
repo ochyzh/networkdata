@@ -42,3 +42,25 @@
 #' }
 #' @source Gade et al 2019
 "gadeData"
+
+#' A list of edges-collaborations among the 10 most ideological senators from the 109th Congress.
+#' An edge $ij$ in this network is defined as equal to 1 if i cosponsored j at least two times.
+#' #' @format A data frame:
+#' \describe{
+#'    \item{V1}{name of the first senator}
+#'    \item{V2}{name of the second senator}
+#' }
+"el"
+
+#' Ideological scores of the top 10 most ideological senators in the 109th Congress
+#' #' #' @format A data frame:
+#' \describe{
+#'    \item{labs}{name of the senator}
+#'    \item{dwnom}{dwnominate (ideologocal) score}
+#' }
+"dwnom"
+
+#' A 10 by 10 matrix of geograohical distances among the top 10 most ideological senators in the 109th Congress
+"edist"
+
+
