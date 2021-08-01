@@ -64,3 +64,27 @@
 "edist"
 
 
+#' A list of 8 time periods of data on diplomatic ties between 134 countries
+"dipl_ties"
+
+#' A list of 8 time periods of data on alliance ties between 134 countries
+"allies"
+
+#' A list of 8 time periods of data on contiguity between 134 countries
+"contig"
+
+#' Polity data for 134 countries over 8 years
+"polity"
+
+#' A list of 10 time periods of data on alliance ties between 50 countries
+"ally"
+
+#' A long-form dataset of alliances, contiguity, and war among 50 countries over 10 time periods.
+"dyadData"
+
+#' A list of 10 time periods of data on contiguity between 50 countries
+"contiguity"
+
+#' A list of 10 time periods of data on war between 50 countries
+"war"
+
