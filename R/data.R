@@ -101,6 +101,10 @@
 #' @source https://correlatesofwar.org/
 "trade"
 
+#' A matrix of trade relations in 2014
+#' @source https://correlatesofwar.org/ Correlates of War (COW) dyadic trade data version 4.0. See COW manual for details
+"TRADE"
+
 #' Co-sponsorship network pre-redistricting
 "AMnet01"
 
