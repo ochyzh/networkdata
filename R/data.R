@@ -97,3 +97,38 @@
 #' data on exports between international countries (in millions USD) in 2014
 "tradenet"
 
+#' Correlates of War (COW) dyadic trade data version 4.0. See COW manual for details
+#' @source https://correlatesofwar.org/
+"trade"
+
+#' Co-sponsorship network pre-redistricting
+"AMnet01"
+
+#' Co-sponsorship network post-redistricting
+"AMnet03"
+
+#' Whether two legistlators are from the same district in 2001
+"same.dist01"
+
+#' Whether two legistlators are from the same district in 2003
+"same.dist03"
+
+#' Whether two legistlators are from the same party in 2001
+"same.party01"
+
+#' Whether two legistlators are from the same party in 2003
+"same.party03"
+
+#' Interaction between same district and same party in 2001
+"interact01"
+
+#' Interaction between same district and same party in 2003
+"interact03"
+
+#' Node-level party and district in 2001
+"NC01"
+
+#' Node-level party and district in 2003
+"NC03"
+
+
