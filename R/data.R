@@ -88,3 +88,12 @@
 #' A list of 10 time periods of data on war between 50 countries
 "war"
 
+#' a contiguity matrix, whose elements equal to 1 if two countries are contiguous (share a land border)
+"CONT"
+
+#' a vector of country names
+"cname"
+
+#' data on exports between international countries (in millions USD) in 2014
+"tradenet"
+
