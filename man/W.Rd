@@ -3,7 +3,7 @@
 \docType{data}
 \name{W}
 \alias{W}
-\title{A 1094 by 1094 connectivity matrix of ideological distance between pairs of countries. Larger values correspond to more dissimilar countries.}
+\title{A 1094 by 1094 connectivity matrix of contiguity between pairs of countries. 1 means contiguous.}
 \format{
 An object of class \code{matrix} (inherits from \code{array}) with 1094 rows and 1094 columns.
 }
@@ -11,6 +11,6 @@ An object of class \code{matrix} (inherits from \code{array}) with 1094 rows and
 W
 }
 \description{
-A 1094 by 1094 connectivity matrix of ideological distance between pairs of countries. Larger values correspond to more dissimilar countries.
+A 1094 by 1094 connectivity matrix of contiguity between pairs of countries. 1 means contiguous.
 }
 \keyword{datasets}

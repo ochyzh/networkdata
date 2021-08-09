@@ -152,5 +152,14 @@
 #' @source Chyzh and Kaiser (2018)
 "ally_data"
 
-#' A 1094 by 1094 connectivity matrix of ideological distance between pairs of countries. Larger values correspond to more dissimilar countries.
+#' A 1094 by 1094 connectivity matrix of contiguity between pairs of countries. 1 means contiguous.
 "W"
+
+#' A 42x42 binary connectivity matrix. This is a toy dataset.
+"Wmat"
+
+#' A toy vector with 42 observations of a binary variable.
+"Y"
+
+
+
