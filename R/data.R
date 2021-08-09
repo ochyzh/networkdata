@@ -136,3 +136,21 @@
 "NC03"
 
 
+#' a dataset on international alliances in 2007
+#'
+#' @format A long-form data frame with 1094 observations on 8 variables:
+#' \describe{
+#'   \item{ccode1}{COW numeric country identifyer for country 1}
+#'   \item{ccode2}{COW numeric country identifyer for country 2}
+#'   \item{edge}{a unique identifier for each pair of countries}
+#'   \item{defense}{a binary variable that equals to 1 if two countries were a part of a defense alliance in 2007}
+#'   \item{mil_ratio}{a continuous variable calculated as the proportion of military capabilities of the strongest country out of the total, max(m1,m2)/(m1+m2)}
+#'   \item{tot_trade}{logged total trade (exports and imports)}
+#'   \item{joint_dem}{a binary variable that equals to 1 if both countries in the pair are democracies}
+#'   \item{year}{year of observation}
+#' }
+#' @source Chyzh and Kaiser (2018)
+"ally_data"
+
+#' A 1094 by 1094 connectivity matrix of ideological distance between pairs of countries. Larger values correspond to more dissimilar countries.
+"W"
