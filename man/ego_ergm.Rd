@@ -2,7 +2,8 @@
 % Please edit documentation in R/EgoERGM.R
 \name{ego_ergm}
 \alias{ego_ergm}
-\title{Estimation of ego-Exponential Random Graph Model (ego-ERGM) using Expectation Maximization (EM) as per Salter-Townshend and Murphy (2015).}
+\title{Estimation of ego-Exponential Random Graph Model (ego-ERGM) using Expectation Maximization (EM) as per Salter-Townshend and Murphy (2015).
+This function estimates an ego-ERGM.  Code taken from Salter-Townshend and Murphy (2015)'s replication archive.}
 \usage{
 ego_ergm(
   net = NULL,
@@ -45,12 +46,13 @@ ego_ergm(
 \item{tol}{The difference in parameter estimates between EM iterations to determine if the algorithm has converged.  Defaults to 1e-6.}
 }
 \value{
-A list of model results, including lambda (the probability of assignments), 
+A list of model results, including lambda (the probability of assignments),
 group.theta (the roles by terms cluster centroids),
         EE.BIC (the Salter-Townshend and Murphy BIC cross-sectional BIC),
        role_assignments (a data frame of the most likely assignments), and reduced_networks (network with excluded ego).
 }
 \description{
+Estimation of ego-Exponential Random Graph Model (ego-ERGM) using Expectation Maximization (EM) as per Salter-Townshend and Murphy (2015).
 This function estimates an ego-ERGM.  Code taken from Salter-Townshend and Murphy (2015)'s replication archive.
 }
 \examples{

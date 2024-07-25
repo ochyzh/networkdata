@@ -1,3 +1,16 @@
+#' a statnet network of emails among 54 GAStech employees
+#'
+#' @format Two vertices are connected if i sent at least one email to j. Emails are limited to those with fewer than 5 recipients.
+#' \describe{
+#'   \item{name}{employee name}
+#'   \item{position}{employee position in the company}
+#'   \item{mil}{military service branch}
+#'   \item{citizen}{country of citizenship}
+#'   \item{vertex.names}{email address}
+#' }
+#' @source 2014 VAST Challenge
+"emailnet"
+
 #' Dyadic data on bilateral alliance
 #'
 #' @format A data frame with 2256 rows and 5 variables:
