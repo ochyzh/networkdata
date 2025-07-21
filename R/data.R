@@ -73,7 +73,15 @@
 #' }
 "dwnom"
 
-#' A 10 by 10 matrix of geograohical distances among the top 10 most ideological senators in the 109th Congress
+#' Geographic distances between top 10 ideological senators
+#'
+#' A 10 by 10 matrix of geographical distances among the top 10 most ideological senators in the 109th Congress.
+#'
+#' @format A 10x10 numeric matrix.
+#' @keywords datasets
+#' @docType data
+#' @name edist
+#' @usage data(edist)
 "edist"
 
 
@@ -110,8 +118,16 @@
 #' data on exports between international countries (in millions USD) in 2014
 "tradenet"
 
-#' Correlates of War (COW) dyadic trade data version 4.0. See COW manual for details
-#' @source https://correlatesofwar.org/
+#' Correlates of War (COW) dyadic trade data (v4.0)
+#'
+#' Dyadic trade flows among countries for 2014. See COW manual for details.
+#'
+#' @format A data frame with dyadic trade information.
+#' @source \url{https://correlatesofwar.org/}
+#' @keywords datasets
+#' @docType data
+#' @name trade
+#' @usage data(trade)
 "trade"
 
 #' A matrix of trade relations in 2014
@@ -119,33 +135,113 @@
 "TRADE"
 
 #' Co-sponsorship network pre-redistricting
+#'
+#' A binary adjacency matrix representing co-sponsorship ties among legislators in 2001, before redistricting.
+#'
+#' @format A square binary matrix.
+#' @keywords datasets
+#' @docType data
+#' @name AMnet01
+#' @usage data(AMnet01)
 "AMnet01"
 
 #' Co-sponsorship network post-redistricting
+#'
+#' A binary adjacency matrix representing co-sponsorship ties among legislators in 2003, after redistricting.
+#'
+#' @format A square binary matrix.
+#' @keywords datasets
+#' @docType data
+#' @name AMnet03
+#' @usage data(AMnet03)
 "AMnet03"
 
-#' Whether two legistlators are from the same district in 2001
+#' Legislators from the same district in 2001
+#'
+#' A binary matrix indicating whether each pair of legislators was from the same district in 2001.
+#'
+#' @format A square binary matrix.
+#' @keywords datasets
+#' @docType data
+#' @name same.dist01
+#' @usage data(same.dist01)
 "same.dist01"
 
-#' Whether two legistlators are from the same district in 2003
+#' Legislators from the same district in 2003
+#'
+#' A binary matrix indicating whether each pair of legislators was from the same district in 2003.
+#'
+#' @format A square binary matrix.
+#' @keywords datasets
+#' @docType data
+#' @name same.dist03
+#' @usage data(same.dist03)
 "same.dist03"
 
-#' Whether two legistlators are from the same party in 2001
+#' Legislators from the same party in 2001
+#'
+#' A binary matrix indicating whether each pair of legislators belonged to the same political party in 2001.
+#'
+#' @format A square binary matrix.
+#' @keywords datasets
+#' @docType data
+#' @name same.party01
+#' @usage data(same.party01)
 "same.party01"
 
-#' Whether two legistlators are from the same party in 2003
+#' Legislators from the same party in 2003
+#'
+#' A binary matrix indicating whether each pair of legislators belonged to the same political party in 2003.
+#'
+#' @format A square binary matrix.
+#' @keywords datasets
+#' @docType data
+#' @name same.party03
+#' @usage data(same.party03)
 "same.party03"
 
-#' Interaction between same district and same party in 2001
+#' Interaction: same district and same party in 2001
+#'
+#' A binary matrix indicating whether each legislator pair was from the same district and same party in 2001.
+#'
+#' @format A square binary matrix.
+#' @keywords datasets
+#' @docType data
+#' @name interact01
+#' @usage data(interact01)
 "interact01"
 
-#' Interaction between same district and same party in 2003
+#' Interaction: same district and same party in 2003
+#'
+#' A binary matrix indicating whether each legislator pair was from the same district and same party in 2003.
+#'
+#' @format A square binary matrix.
+#' @keywords datasets
+#' @docType data
+#' @name interact03
+#' @usage data(interact03)
 "interact03"
 
-#' Node-level party and district in 2001
+#' Legislator-level covariates in 2001
+#'
+#' A data frame with node-level covariates for legislators in 2001, including district and party ID.
+#'
+#' @format A data frame with one row per legislator.
+#' @keywords datasets
+#' @docType data
+#' @name NC01
+#' @usage data(NC01)
 "NC01"
 
-#' Node-level party and district in 2003
+#' Legislator-level covariates in 2003
+#'
+#' A data frame with node-level covariates for legislators in 2003, including district and party ID.
+#'
+#' @format A data frame with one row per legislator.
+#' @keywords datasets
+#' @docType data
+#' @name NC03
+#' @usage data(NC03)
 "NC03"
 
 
@@ -165,13 +261,11 @@
 #' @source Chyzh and Kaiser (2018)
 "ally_data"
 
-#' A 1094 by 1094 connectivity matrix of contiguity between pairs of countries. 1 means contiguous.
+
+#' A 100x100 binary connectivity matrix. This is a toy dataset.
 "W"
 
-#' A 42x42 binary connectivity matrix. This is a toy dataset.
-"Wmat"
-
-#' A toy vector with 42 observations of a binary variable.
+#' A toy vector with 100 observations of a binary variable.
 "Y"
 
 #' A network of lawyers
@@ -193,6 +287,4 @@
 #'  @references E. Lazega, The Collegial Phenomenon: The Social Mechanisms of
 #'  Cooperation Among Peers in a Corporate Law Partnership. Oxford University Press, Oxford (2001).
 "lazega"
-
-
 

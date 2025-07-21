@@ -3,14 +3,14 @@
 \docType{data}
 \name{NC03}
 \alias{NC03}
-\title{Node-level party and district in 2003}
+\title{Legislator-level covariates in 2003}
 \format{
-An object of class \code{data.frame} with 123 rows and 3 columns.
+A data frame with one row per legislator.
 }
 \usage{
-NC03
+data(NC03)
 }
 \description{
-Node-level party and district in 2003
+A data frame with node-level covariates for legislators in 2003, including district and party ID.
 }
 \keyword{datasets}

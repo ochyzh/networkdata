@@ -3,14 +3,14 @@
 \docType{data}
 \name{Y}
 \alias{Y}
-\title{A toy vector with 42 observations of a binary variable.}
+\title{A toy vector with 100 observations of a binary variable.}
 \format{
-An object of class \code{numeric} of length 42.
+An object of class \code{numeric} of length 100.
 }
 \usage{
 Y
 }
 \description{
-A toy vector with 42 observations of a binary variable.
+A toy vector with 100 observations of a binary variable.
 }
 \keyword{datasets}

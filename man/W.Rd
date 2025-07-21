@@ -3,14 +3,14 @@
 \docType{data}
 \name{W}
 \alias{W}
-\title{A 1094 by 1094 connectivity matrix of contiguity between pairs of countries. 1 means contiguous.}
+\title{A 100x100 binary connectivity matrix. This is a toy dataset.}
 \format{
-An object of class \code{matrix} (inherits from \code{array}) with 1094 rows and 1094 columns.
+An object of class \code{matrix} (inherits from \code{array}) with 100 rows and 100 columns.
 }
 \usage{
 W
 }
 \description{
-A 1094 by 1094 connectivity matrix of contiguity between pairs of countries. 1 means contiguous.
+A 100x100 binary connectivity matrix. This is a toy dataset.
 }
 \keyword{datasets}

@@ -3,14 +3,14 @@
 \docType{data}
 \name{edist}
 \alias{edist}
-\title{A 10 by 10 matrix of geograohical distances among the top 10 most ideological senators in the 109th Congress}
+\title{Geographic distances between top 10 ideological senators}
 \format{
-An object of class \code{matrix} (inherits from \code{array}) with 10 rows and 10 columns.
+A 10x10 numeric matrix.
 }
 \usage{
-edist
+data(edist)
 }
 \description{
-A 10 by 10 matrix of geograohical distances among the top 10 most ideological senators in the 109th Congress
+A 10 by 10 matrix of geographical distances among the top 10 most ideological senators in the 109th Congress.
 }
 \keyword{datasets}

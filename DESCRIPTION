@@ -9,4 +9,10 @@ RoxygenNote: 7.3.2
 Encoding: UTF-8
 License: GPL-3
 Imports:
-    statnet
+    statnet, 
+    network, 
+    boot,
+    ergm
+Suggests:
+    sna,
+    xergm.common

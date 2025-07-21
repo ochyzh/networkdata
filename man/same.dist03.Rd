@@ -3,14 +3,14 @@
 \docType{data}
 \name{same.dist03}
 \alias{same.dist03}
-\title{Whether two legistlators are from the same district in 2003}
+\title{Legislators from the same district in 2003}
 \format{
-An object of class \code{matrix} (inherits from \code{array}) with 123 rows and 123 columns.
+A square binary matrix.
 }
 \usage{
-same.dist03
+data(same.dist03)
 }
 \description{
-Whether two legistlators are from the same district in 2003
+A binary matrix indicating whether each pair of legislators was from the same district in 2003.
 }
 \keyword{datasets}

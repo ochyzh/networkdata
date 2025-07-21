@@ -5,12 +5,12 @@
 \alias{AMnet03}
 \title{Co-sponsorship network post-redistricting}
 \format{
-An object of class \code{network} of length 5.
+A square binary matrix.
 }
 \usage{
-AMnet03
+data(AMnet03)
 }
 \description{
-Co-sponsorship network post-redistricting
+A binary adjacency matrix representing co-sponsorship ties among legislators in 2003, after redistricting.
 }
 \keyword{datasets}

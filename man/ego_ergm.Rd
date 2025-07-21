@@ -56,36 +56,33 @@ Estimation of ego-Exponential Random Graph Model (ego-ERGM) using Expectation Ma
 This function estimates an ego-ERGM.  Code taken from Salter-Townshend and Murphy (2015)'s replication archive.
 }
 \examples{
-\donttest{
-# Code from xergm.common and their preparation of the Knecht network
-library(xergm.common)
-set.seed(1)
+if (requireNamespace("xergm.common", quietly = TRUE) &&
+    requireNamespace("network", quietly = TRUE) &&
+    requireNamespace("sna", quietly = TRUE)) {
+  set.seed(1)
+  data("knecht", package = "xergm.common")
 
-data("knecht")
+  for (i in seq_along(friendship)) {
+    rownames(friendship[[i]]) <- paste("Student.", 1:nrow(friendship[[i]]), sep = "")
+    colnames(friendship[[i]]) <- paste("Student.", 1:nrow(friendship[[i]]), sep = "")
+  }
+  rownames(primary) <- rownames(friendship[[1]])
+  colnames(primary) <- colnames(friendship[[1]])
+  sex <- demographics$sex
+  names(sex) <- rownames(friendship[[1]])
 
-for (i in 1:length(friendship)) {
- rownames(friendship[[i]]) <- paste("Student.", 1:nrow(friendship[[i]]), sep="")
- colnames(friendship[[i]]) <- paste("Student.", 1:nrow(friendship[[i]]), sep="")
-}
-rownames(primary) <- rownames(friendship[[1]])
-colnames(primary) <- colnames(friendship[[1]])
-sex <- demographics$sex
-names(sex) <- rownames(friendship[[1]])
-# step 2: imputation of NAs and removal of absent nodes:
-friendship <- xergm.common::handleMissings(friendship, na = 10, method = "remove")
-friendship <- xergm.common::handleMissings(friendship, na = NA, method = "fillmode")
-# step 3: add nodal covariates to the networks
-for (i in 1:length(friendship)) {
-  s <- xergm.common::adjust(sex, friendship[[i]])
-  friendship[[i]] <- network::network(friendship[[i]])
-  friendship[[i]] <- network::set.vertex.attribute(friendship[[i]], "sex", s)
-  idegsqrt <- sqrt(sna::degree(friendship[[i]], cmode = "indegree"))
-  friendship[[i]] <- network::set.vertex.attribute(friendship[[i]],
-                                                   "idegsqrt", idegsqrt)
-  odegsqrt <- sqrt(sna::degree(friendship[[i]], cmode = "outdegree"))
-  friendship[[i]] <- network::set.vertex.attribute(friendship[[i]],
-                                                   "odegsqrt", odegsqrt)
-}
+  friendship <- xergm.common::handleMissings(friendship, na = 10, method = "remove")
+  friendship <- xergm.common::handleMissings(friendship, na = NA, method = "fillmode")
+
+  for (i in seq_along(friendship)) {
+    s <- xergm.common::adjust(sex, friendship[[i]])
+    friendship[[i]] <- network::network(friendship[[i]])
+    friendship[[i]] <- network::set.vertex.attribute(friendship[[i]], "sex", s)
+    idegsqrt <- sqrt(sna::degree(friendship[[i]], cmode = "indegree"))
+    friendship[[i]] <- network::set.vertex.attribute(friendship[[i]], "idegsqrt", idegsqrt)
+    odegsqrt <- sqrt(sna::degree(friendship[[i]], cmode = "outdegree"))
+    friendship[[i]] <- network::set.vertex.attribute(friendship[[i]], "odegsqrt", odegsqrt)
+  }
 sapply(friendship, network::network.size)
 net <- friendship
 rm(list=setdiff(ls(), "net"))

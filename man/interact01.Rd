@@ -3,14 +3,14 @@
 \docType{data}
 \name{interact01}
 \alias{interact01}
-\title{Interaction between same district and same party in 2001}
+\title{Interaction: same district and same party in 2001}
 \format{
-An object of class \code{matrix} (inherits from \code{array}) with 123 rows and 123 columns.
+A square binary matrix.
 }
 \usage{
-interact01
+data(interact01)
 }
 \description{
-Interaction between same district and same party in 2001
+A binary matrix indicating whether each legislator pair was from the same district and same party in 2001.
 }
 \keyword{datasets}
