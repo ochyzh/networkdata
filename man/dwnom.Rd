@@ -10,7 +10,7 @@
    \item{dwnom}{dwnominate (ideologocal) score}
 }}
 \format{
-An object of class \code{data.frame} with 10 rows and 2 columns.
+An object of class \code{data.frame} with 9 rows and 2 columns.
 }
 \usage{
 dwnom
